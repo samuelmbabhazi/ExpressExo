@@ -3,13 +3,13 @@ const app = express();
 const port = 9000;
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/Views/index2.html");
+  res.sendFile(__dirname + "/Views/login.html");
 });
 app.get("/todo", (req, res) => {
-  res.sendFile(__dirname + "/Views/index.html");
+  res.sendFile(__dirname + "/Views/todolist.html");
 });
 app.get("/end", (req, res) => {
-  res.sendFile(__dirname + "/Views/index1.html");
+  res.sendFile(__dirname + "/Views/signupform.html");
 });
 
 app.listen(port, () => {
